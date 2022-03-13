@@ -35,6 +35,7 @@ finalProject.yml
 computational-materials/
 |-tests/
 |-models/
+| |-cifadaptor.py
 | |-Neural_Network.py
 | |-Devision_Tree.py
 | |-Random_Forest.py
@@ -47,6 +48,11 @@ computational-materials/
 examples/
 |-NN_demo.ipynb
 |-DTandRF_demo.ipynb
+doc/
+|-dataset/
+| |-bg_struct.csv
+|-Image/
+| |-pairplot.png
 
 ```
 ## Examples
