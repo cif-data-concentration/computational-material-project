@@ -189,6 +189,6 @@ dependencies:
   - zstd=1.4.4
   - pip:
     - appnope==0.1.2
-    - llvm-openmp=12.0.0
-    - libgfortran=3.0.1
+    - llvm-openmp==12.0.0
+    - libgfortran==3.0.1
 prefix: /Users/yanyaohan/opt/anaconda3/envs/finalProject
