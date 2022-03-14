@@ -5,9 +5,7 @@ import sklearn.preprocessing
 import seaborn as sns
 
 def TPE(n_trials):
-'''
-n_trials: number of trials
-'''
+
     def objective(trial):
         # define hyperparameter space
         n1 = trial.suggest_categorical('n1', [2, 8, 16, 64, 128, 256, 512])
