@@ -1,8 +1,7 @@
-import keras
 import pandas as pd
-from computational_material.models.Neural_Network import neural_network_model
-from computational_material.quality_test.NN_metrics import nn_mse
-from computational_material.optimization.hypersearch_nn import TPE
+from Neural_Network import neural_network_model
+from NN_metrics import nn_mse
+from hypersearch_nn import TPE
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import tensorflow
