@@ -45,8 +45,8 @@ computational-materials/
 | |-Neural_Network.py
 | |-Devision_Tree.py
 | |-Random_Forest.py
-|-quality_est/
-| |-metrics.py
+|-quality_test/
+| |-NN_metrics.py
 |-optimization/
 | |-hypersearch_nn.py
 | |-hypersearch_dt.py
