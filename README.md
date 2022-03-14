@@ -65,3 +65,6 @@ doc/
 ```
 ## Examples
 See examples folder for more demonstrations on predicting feature with the available tools.
+
+## Next step and lessons learned
+
