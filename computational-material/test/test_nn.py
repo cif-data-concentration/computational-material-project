@@ -1,7 +1,4 @@
 import pandas as pd
-from Neural_Network import neural_network_model
-from NN_metrics import nn_mse
-from hypersearch_nn import TPE
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 import tensorflow
@@ -20,6 +17,21 @@ X_train_scaler = StandardScaler().fit(X_train_pn)
 X_train = X_train_scaler.transform(X_train_pn)
 X_test = X_train_scaler.transform(X_test_pn)
 
+def neural_network_model(n1, n2, n3, act1, act2, act3, lr):
+    """
+    activation: 'relu', 'sigmoid', 'linear', 'tanh', 'selu', 'elu'
+    """
+    model = Sequential()
+    model.add(Dense(n1, input_dim=5, kernel_initializer='normal', activation=act1))
+    model.add(Dense(n2, kernel_initializer='normal', activation=act2))
+    model.add(Dense(n3, kernel_initializer='normal', activation=act3))
+    model.add(Dense(1, kernel_initializer='normal'))
+
+    opt = tensorflow.keras.optimizers.Adam(learning_rate=lr)
+
+    model.compile(loss='mean_squared_error', optimizer=opt)
+    return model
+
 def test_neural_network_model():
 
     test_estimator = KerasRegressor(build_fn=neural_network_model,
@@ -30,6 +42,17 @@ def test_neural_network_model():
                             batch_size=1000, verbose=1)
     assert isinstance(test_estimator, tensorflow.keras.wrappers.scikit_learn.KerasRegressor)
     assert isinstance(test_history, tensorflow.keras.callbacks.History)
+
+def nn_mse(n1, n2, n3, act1, act2, act3, lr):
+    estimator = KerasRegressor(build_fn=neural_network_model,
+                               n1=n1, n2=n2, n3=n3,
+                               act1=act1, act2=act2, act3=act3,
+                               epochs=150, batch_size=100, verbose=0, lr=lr)
+    history = estimator.fit(X_train, y_train, validation_split=0.30, epochs=150,
+                            batch_size=100, verbose=0)
+
+    return history.history['val_loss'][-1]
+
 
 def test_NN_metrics():
 
