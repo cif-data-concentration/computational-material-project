@@ -29,8 +29,8 @@ def test_neural_network_model():
                                epochs=1500, batch_size=1000, verbose=1, lr=0.01)
     test_history = test_estimator.fit(X_train, y_train, validation_split=0.30, epochs=150,
                             batch_size=1000, verbose=1)
-    assert isinstance(test_estimator, tensorflow.python.keras.wrappers.scikit_learn.KerasRegressor)
-    assert isinstance(test_history, tensorflow.python.keras.callbacks.History)
+    assert isinstance(test_estimator, tensorflow.keras.wrappers.scikit_learn.KerasRegressor)
+    assert isinstance(test_history, tensorflow.keras.callbacks.History)
 
 def test_NN_metrics():
 
