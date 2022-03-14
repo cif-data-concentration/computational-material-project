@@ -6,13 +6,19 @@ This adaptor is a pre-process algorithm that massively extracts structural infor
 
 ## Machine Learning
 Explore a specific structure-property relationship between lattice constants and the bandgap of a chosen range of materials.
-![image](https://github.com/cif-data-concentration/computational-material-project/blob/main/pairplot.png)
+![image](https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/pairplot.png)
 
 ### Neural Network
 __Current Functionality__:
 - [x] Instantialize, train a neural network model
 - [x] Predict feature with the NN model
 - [x] Model optimization using hyperparameters tuning
+
+<p float="left">
+  <img src=https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/optimal%20nn%20model%20loss.png width="45%" aligh = left />
+  <img src=https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/actual%20vs%20predictde.png width="46.5%" align = right />
+</p>
+
 ### Division Tree & Random Forest
 __Current Functionality__:
 
