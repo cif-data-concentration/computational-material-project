@@ -59,6 +59,8 @@ doc/
 | |-bg_struct.csv
 |-Image/
 | |-pairplot.png
+| |-actual vs predicted.png
+| |-optimal nn model loss.png
 
 ```
 ## Examples
