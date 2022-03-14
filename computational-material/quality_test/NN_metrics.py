@@ -11,6 +11,7 @@ from tensorflow.keras.wrappers.scikit_learn import KerasRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
+seed = 12
 data = pd.read_csv('./doc/dataset/bg_struct.csv', index_col=0)
 X = data[['cell_lentgh_b', 'cell_lentgh_c', 'cell_angle_alpha', 'cell_angle_beta', 'cell_angle_gamma']].values
 Y = data[['cell_length_a']].values
