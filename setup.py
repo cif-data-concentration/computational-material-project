@@ -6,10 +6,9 @@ from distutils.core import setup
 setup(
       name='cif-data-concentration',
       version='1.0',
-      description='A useful package to extract data from .cif file and compile the data to dataframe.
-      Different machine learning methods to predict bandgap when crystal lattice constant known',
+      description='A useful package to extract data from .cif file and compile the data to dataframe. Different machine learning methods to predict bandgap when crystal lattice constant known',
       author='Yifei He, Ruofan Liu, Yanyao Han, Jiayi Li',
-      url='',
+      url='https://github.com/cif-data-concentration/computational-material-project',
       packages=['distutils', 'distutils.command'],
       license='',
       keywords=[
@@ -20,4 +19,7 @@ setup(
             'machine_learning',
       ],
       python_requires='>=3.7',
+      install_requires=[
+        'numpy>=1.19.1'
+      ]
      )
