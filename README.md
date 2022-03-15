@@ -1,3 +1,7 @@
+[![Anaconda-Server Badge](https://anaconda.org/anaconda/anaconda/badges/installer/conda.svg)](https://conda.anaconda.org/anaconda)
+[![Anaconda-Server Badge](https://anaconda.org/anaconda/anaconda/badges/platforms.svg)](https://anaconda.org/anaconda/anaconda)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # computational-material-project
 The project contains two separate parts. One is to extract the information of molecules from the cif file and compile to pandas dataframe, the other is to use machine learning to analyze the relationship between crystal structure and the band gap.
 
