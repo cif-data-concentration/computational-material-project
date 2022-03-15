@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # computational-material-project
-The project contains two separate parts. One is to extract the information of molecules from the cif file and compile to pandas dataframe, the other is to use machine learning to analyze the relationship between crystal structure and the band gap.
+The project contains two separate parts. One is to extract the information of molecules from the cif file and compile to pandas dataframe, the other is to use machine learning to analyze the relationship between crystal structure and the band gap. And create an user interface to output the predict bandgap value.
 
 ## Cif Adaptor
 This adaptor is a pre-process algorithm that massively extracts structural information from either user uploaded raw files in the same path or the open-source library using API for data access and then append the information with the properties of substances from the known libraries(Material Project).
@@ -23,8 +23,12 @@ __Current Functionality__:
   <img src=https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/actual%20vs%20predictde.png width="46.5%" align = right />
 </p>
 
-### Division Tree & Random Forest
+### Decision Tree & Random Forest
 __Current Functionality__:
+- [x] Model optimization using hyperparameters tuning
+- [x] Train a decision tree and random forest model
+- [x] Predict bandgap with the decision tree regressor and random forest regressor model
+- [x] Create an user interface to output the predicted bandgap
 
 ###
 
