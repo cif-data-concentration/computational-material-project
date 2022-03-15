@@ -58,11 +58,11 @@ class UnitTests(unittest.TestCase):
         '''
         This is a test function for bandgap_dt.
         '''
-        assert type(bandgap_dt(1.3, 1.4, 1.6, 70, 80, 90)) == 'numpy.float64'
+        assert isinstance(bandgap_dt(1.3, 1.4, 1.6, 70, 80, 90), np.float64)
 
 
     def test_bandgap_rf(self):
         '''
         This is a test function for bandgap_rf.
         '''
-        assert type(bandgap_rf(1.3, 1.4, 1.6, 70, 80, 90)) == 'numpy.float64'
+        assert isinstance(bandgap_rf(1.3, 1.4, 1.6, 70, 80, 90), np.float64)
