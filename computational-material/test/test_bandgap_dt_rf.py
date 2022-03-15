@@ -6,7 +6,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv('../../../doc/dataset/bg_struct.csv', index_col=0)
+df = pd.read_csv('./doc/dataset/bg_struct.csv', index_col=0)
 X = df[['cell_length_a','cell_lentgh_b', 'cell_lentgh_c',
         'cell_angle_alpha', 'cell_angle_beta', 'cell_angle_gamma']]
 y = df['bandgap']
