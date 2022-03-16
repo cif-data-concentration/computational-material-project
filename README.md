@@ -30,7 +30,8 @@ __Current Functionality__:
 - [x] Predict bandgap with the decision tree regressor and random forest regressor model
 - [x] Create an user interface to output the predicted bandgap
 
-###
+### User Interface to predict the band gap
+<img src='https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/User%20Interface%20to%20predict%20band%20gap.png'>
 
 ## Installation
 Install and activate the environment with `finalProject.yml` by:
