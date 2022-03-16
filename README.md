@@ -31,6 +31,7 @@ __Current Functionality__:
 - [x] Create an user interface to output the predicted bandgap
 
 ### User Interface to predict the band gap
+In the right hand side, users can enter the crystal lattice constant and choose the machine learning method and then the left hand side will output the predict band gap value.
 <img src='https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/User%20Interface%20to%20predict%20band%20gap.png'>
 
 ## Installation
@@ -70,6 +71,7 @@ doc/
 | |-pairplot.png
 | |-actual vs predicted.png
 | |-optimal nn model loss.png
+| |-User Interface to predict band gap.png
 
 ```
 ## Examples
