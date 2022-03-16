@@ -49,13 +49,35 @@ Vicky is a researcher who wants to anticipate the band gap of a polymer material
 
 - The path of the cif files of users own database, a string
 
-- The specific parameters and properties they want to extract from cif files, a list of property names
-
 *Outputs*:
 
 - The dataframe format information
   
+
 **Component design 2**:
+
+*Name*:
+
+- CifDownload
+
+*What it does*:
+
+- Take inputs from the sequential prompt in CIF_Process.py to download the band gap data from Materials Project.
+
+- Create .cif files for each compound.
+
+*Inputs*:
+
+- api keys, file path, interested boundary of band gaps
+
+*Outputs*:
+
+- A list of dictionaries of inidividual compounds and relevant information
+- Local cif files written from the structural information downloaded from the library.
+
+
+
+**Component design 3**:
 
 *Name*:
 
