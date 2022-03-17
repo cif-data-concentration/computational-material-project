@@ -1,7 +1,7 @@
 import df_CIF as cif
 import numpy as np
 import pandas as pd
-
+import os
 
 # To run the script we will have to have your api and filepath.
 
