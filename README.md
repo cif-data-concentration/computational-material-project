@@ -81,28 +81,35 @@ computational-material-project
 -----
 setup.py
 finalProject.yml
+CIF processing/
+|-CIF_process.py
+|-df_CIF.py
+|manualtest_df_CIF.ipynb
+|manualtest_df_CIF.py
 computational-materials/
-|-CIF processing/
-| |-CIF_process.py
-| |-df_CIF.py
-| |manualtest_df_CIF.ipynb
-| |manualtest_df_CIF.py
 |-tests/
-|-models/
-| |-cifadaptor.py
+| |-NN_metrics.py
 | |-Neural_Network.py
-| |-Devision_Tree.py
-| |-Random_Forest.py
+| |-test_bandgap_dt_rf.py
+| |-test_cif_conversion.py
+| |-test_nn.py
+|-models/
+| |-Neural_Network.py
+| |-band_gap_prediction.ipynb
+| |-bandgap_dt_rf.py
+| |-comp_material.ipynb
+| |-user_interface_dt_rf.ipynb
 |-quality_test/
 | |-NN_metrics.py
 |-optimization/
 | |-hypersearch_nn.py
-| |-hypersearch_dt.py
-| |-hypersearch_rf.py
+| |-hyper_tuning_DT_RF.ipynb
 examples/
 |-NN_demo.ipynb
 |-DTandRF_demo.ipynb
 doc/
+|-DIRECT_finproj.pptx
+|-Use case and component specification.md
 |-dataset/
 | |-bg_struct.csv
 |-Image/
