@@ -45,7 +45,6 @@ With the pair plot of all the features in the extracted dataframe, the correlati
 
 **Hypothesis**: For the band gap of a substance to fall in the visible light spectrum, there is a specific relationship for the cell parameters to satisfy, hence confining the size of the unit cell.
 
-[image](https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/pairplot.png)
 <img src=https://github.com/cif-data-concentration/computational-material-project/blob/main/doc/Image/pairplot.png />
 
 **Method**: Neural Network
