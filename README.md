@@ -53,7 +53,7 @@ With the pair plot of all the features in the extracted dataframe, the correlati
 
 **Method**: Neural Network
 
-**Results**:
+**Results**: R2 score = 0.60
 
 
 <p float="left">
@@ -82,6 +82,11 @@ computational-material-project
 setup.py
 finalProject.yml
 computational-materials/
+|-CIF processing/
+| |-CIF_process.py
+| |-df_CIF.py
+| |manualtest_df_CIF.ipynb
+| |manualtest_df_CIF.py
 |-tests/
 |-models/
 | |-cifadaptor.py
